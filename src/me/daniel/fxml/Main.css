@@ -1,0 +1,52 @@
+.background {
+  -fx-background-color: #1e1f29;
+}
+
+.template-text {
+  -fx-text-fill: #aaaaaa;
+}
+
+.template-input {
+  -fx-background-color: #2c2c35;
+  -fx-text-fill: #ffffff;
+}
+
+.template-select-input {
+  -fx-background-color: #2c2c35;
+}
+
+.template-select-input .list-cell {
+  -fx-background-color: #2c2c35;
+  -fx-text-fill: #ffffff;
+}
+
+.template-render {
+  -fx-text-fill: #000000;
+  -fx-background-color: #ffc343;
+}
+
+.template-secondary {
+  -fx-text-fill: #aaaaaa;
+}
+
+.tab-pane .tab {
+  -fx-padding: 10 16;
+  -fx-background-color: #2c2c35;
+  -fx-text-base-color: #ffffff;
+  -fx-focus-color: transparent;
+  -fx-faint-focus-color: transparent;
+}
+
+.tab-pane .tab:selected {
+  -fx-background-color: #35353f;
+}
+
+.tab-header-background {
+  -fx-background-color: transparent;
+}
+
+.tab-pane > .tab-header-area {
+  -fx-border-width: 0 0 2 0;
+  -fx-border-color: #35353f;
+  -fx-padding: 0;
+}

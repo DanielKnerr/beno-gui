@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="BenoGUI">
+    <output-path>$PROJECT_DIR$/out/artifacts/BenoGUI</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="me.daniel.MainApplication" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="title" value="" />
+        <option name="vendor" value="" />
+        <option name="version" value="" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="BenoGUI.jar">
+        <element id="module-output" name="BenoGUI" />
+      </element>
+    </root>
+  </artifact>
+</component>

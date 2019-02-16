@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="main" prefHeight="720.0" prefWidth="1280.0" styleClass="background" stylesheets="@Main.css" xmlns="http://javafx.com/javafx/8.0.162-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="outputImage" fitHeight="640.0" fitWidth="640.0" pickOnBounds="true" preserveRatio="true" />
+      <VBox prefHeight="640.0" prefWidth="628.0">
+         <children>
+            <TabPane prefHeight="572.0" prefWidth="500.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Berechnung">
+                     <content>
+                         <GridPane prefHeight="596.0" prefWidth="480.0">
+                             <columnConstraints>
+                                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+                                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="180.0" />
+                             </columnConstraints>
+                             <rowConstraints>
+                                 <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                                 <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                                 <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                                 <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                                 <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                                 <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                                 <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                                 <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                                 <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                                 <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                             </rowConstraints>
+                             <children>
+                                 <Label styleClass="template-text" stylesheets="@Main.css" text="Name">
+                                     <font>
+                                         <Font name="Source Sans Pro Regular" size="16.0" />
+                                     </font>
+                                 </Label>
+                                 <TextField fx:id="templateName" prefHeight="35.0" styleClass="template-input" stylesheets="@Main.css" GridPane.columnIndex="1">
+                                     <font>
+                                         <Font name="Source Sans Pro Regular" size="16.0" />
+                                     </font>
+                                 </TextField>
+                                 <Label styleClass="template-text" stylesheets="@Main.css" text="Renderer" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                                     <font>
+                                         <Font name="Source Sans Pro Regular" size="16.0" />
+                                     </font>
+                                 </Label>
+                                 <ComboBox fx:id="comboBoxRenderer" prefHeight="35.0" prefWidth="349.0" styleClass="template-select-input" stylesheets="@Main.css" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                                 <Label styleClass="template-text" stylesheets="@Main.css" text="Methode" GridPane.columnIndex="0" GridPane.rowIndex="2">
+                                     <font>
+                                         <Font name="Source Sans Pro Regular" size="16.0" />
+                                     </font>
+                                 </Label>
+                                 <ComboBox fx:id="comboBoxMethod" prefHeight="35.0" prefWidth="349.0" styleClass="template-select-input" stylesheets="@Main.css" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                 <Label styleClass="template-text" stylesheets="@Main.css" text="Größe" GridPane.columnIndex="0" GridPane.rowIndex="3">
+                                     <font>
+                                         <Font name="Source Sans Pro Regular" size="16.0" />
+                                     </font>
+                                 </Label>
+                                 <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                     <children>
+                                         <TextField fx:id="inputWidth" alignment="CENTER" prefHeight="35.0" prefWidth="60.0" styleClass="template-input" stylesheets="@Main.css">
+                                             <font>
+                                                 <Font name="Source Sans Pro Regular" size="16.0" />
+                                             </font>
+                                         </TextField>
+                                         <Label text="x" textFill="WHITE">
+                                             <HBox.margin>
+                                                 <Insets left="10.0" right="10.0" />
+                                             </HBox.margin>
+                                         </Label>
+                                         <TextField fx:id="inputHeight" alignment="CENTER" prefHeight="35.0" prefWidth="60.0" styleClass="template-input" stylesheets="@Main.css">
+                                             <font>
+                                                 <Font name="Source Sans Pro Regular" size="16.0" />
+                                             </font>
+                                         </TextField>
+                                     </children>
+                                 </HBox>
+                                 <Label styleClass="template-text" stylesheets="@Main.css" text="Max. Iterationen" GridPane.columnIndex="0" GridPane.rowIndex="4">
+                                     <font>
+                                         <Font name="Source Sans Pro Regular" size="16.0" />
+                                     </font>
+                                 </Label>
+                                 <TextField fx:id="maxIter" prefHeight="35.0" styleClass="template-input" stylesheets="@Main.css" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                     <font>
+                                         <Font name="Source Sans Pro Regular" size="16.0" />
+                                     </font>
+                                 </TextField>
+                             </children>
+                         </GridPane>
+                     </content>
+                  </Tab>
+                <Tab styleClass="tab-pane-header" text="Parameter">
+                    <GridPane prefHeight="596.0" prefWidth="480.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="180.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Label styleClass="template-text" stylesheets="@Main.css" text="Mitte X" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                            <font>
+                                <Font name="Source Sans Pro Regular" size="16.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="centerX" prefHeight="35.0" styleClass="template-input" stylesheets="@Main.css" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                            <font>
+                                <Font name="Source Sans Pro Regular" size="16.0" />
+                            </font>
+                        </TextField>
+                        <Label styleClass="template-text" stylesheets="@Main.css" text="Mitte Y" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                            <font>
+                                <Font name="Source Sans Pro Regular" size="16.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="centerY" prefHeight="35.0" styleClass="template-input" stylesheets="@Main.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                            <font>
+                                <Font name="Source Sans Pro Regular" size="16.0" />
+                            </font>
+                        </TextField>
+                        <Label styleClass="template-text" stylesheets="@Main.css" text="Höhe Y" GridPane.columnIndex="0" GridPane.rowIndex="2">
+                            <font>
+                                <Font name="Source Sans Pro Regular" size="16.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="heightY" prefHeight="35.0" styleClass="template-input" stylesheets="@Main.css" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                            <font>
+                                <Font name="Source Sans Pro Regular" size="16.0" />
+                            </font>
+                        </TextField>
+                    </children>
+                    </GridPane>
+                </Tab>
+                  <Tab styleClass="tab-pane-header" text="Farben" />
+              </tabs>
+            </TabPane>
+            <GridPane prefHeight="67.0" prefWidth="500.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="180.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="btnSave" styleClass="template-secondary" stylesheets="@Main.css" text="Speichern" underline="true" GridPane.rowIndex="1">
+                      <font>
+                          <Font name="Source Sans Pro Regular" size="14.0" />
+                      </font>
+                  </Label>
+                  <Label fx:id="btnCancel" styleClass="template-secondary" stylesheets="@Main.css" text="Zurücksetzen" underline="true" GridPane.rowIndex="2">
+                      <font>
+                          <Font name="Source Sans Pro Regular" size="14.0" />
+                      </font>
+                  </Label>
+                   <Label fx:id="btnLoad" styleClass="template-secondary" stylesheets="@Main.css" text="Laden" underline="true" GridPane.rowIndex="0">
+                       <font>
+                           <Font name="Source Sans Pro Regular" size="14.0" />
+                       </font>
+                   </Label>
+                  <Button fx:id="btnRender" mnemonicParsing="false" prefHeight="38.0" prefWidth="335.0" styleClass="template-render" stylesheets="@Main.css" text="Render" GridPane.columnIndex="1" GridPane.rowSpan="3">
+                      <font>
+                          <Font name="Source Sans Pro Bold" size="16.0" />
+                      </font>
+                  </Button>
+               </children>
+            </GridPane>
+         </children>
+         <HBox.margin>
+            <Insets left="60.0" />
+         </HBox.margin>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+   </padding>
+</HBox>
